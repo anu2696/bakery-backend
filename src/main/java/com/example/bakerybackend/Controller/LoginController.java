@@ -69,7 +69,6 @@ public class LoginController {
 
     @PostMapping(value="/signUp")
     public ResponseEntity<?> addUserController(@RequestBody LoginRequest request){
-
         return loginService.addUser(request);
     }
 }
